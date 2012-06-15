@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Player 1</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://js.pusher.com/1.12/pusher.min.js" type="text/javascript"></script>
+	<style type="text/css" media="screen">
+	  #dialog .ui-header a {
+   	  display: none;
+   	}
+	</style>
+</head> 
+<body>
+
+<div data-role="page" id="card1" data-url="card1" tabindex="0" style="min-height: 538px; ">
+
+	<div data-role="header">
+		<h1>Card 1</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<a href="#" data-role="button" onclick="return playCard('ingredients', 'card1');">Ingredients</a>
+    <a href="#" data-role="button" onclick="return playCard('fat', 'card1');">Fat</a>
+    <a href="#" data-role="button" onclick="return playCard('calories', 'card1');">Calories</a>
+    <a href="#" data-role="button" onclick="return playCard('cookingtime', 'card1');">Cooking Time</a>
+	</div><!-- /content -->
+	
+</div>
+
+
+<div data-role="page" id="card2" data-url="card2" tabindex="0" style="min-height: 538px; ">
+
+	<div data-role="header">
+		<h1>Card 2</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<a href="#" data-role="button" onclick="return playCard('ingredients', 'card2');">Ingredients</a>
+    <a href="#" data-role="button" onclick="return playCard('fat', 'card2');">Fat</a>
+    <a href="#" data-role="button" onclick="return playCard('calories', 'card2');">Calories</a>
+    <a href="#" data-role="button" onclick="return playCard('cookingtime', 'card2');">Cooking Time</a>
+	</div><!-- /content -->
+	
+</div>
+
+<div data-role="page" id="card3" data-url="card3" tabindex="0" style="min-height: 538px; ">
+
+	<div data-role="header">
+		<h1>Card 3</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<a href="#" data-role="button" onclick="return playCard('ingredients', 'card3');">Ingredients</a>
+    <a href="#" data-role="button" onclick="return playCard('fat', 'card3');">Fat</a>
+    <a href="#" data-role="button" onclick="return playCard('calories', 'card3');">Calories</a>
+    <a href="#" data-role="button" onclick="return playCard('cookingtime', 'card3');">Cooking Time</a>
+	</div><!-- /content -->
+
+</div>
+
+<div data-role="dialog" id="dialog" data-url="dialog">
+
+  <div data-role="header">
+  	<h1>And the winner is...</h1>
+  </div>
+
+  <div data-role="content">
+  	<h1 id="winner">???</h1>
+  	<a href="#" data-role="button" onclick="return nextCard();">Next Card</a>
+  </div>
+	
+</div>
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>
